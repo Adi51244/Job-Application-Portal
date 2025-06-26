@@ -98,6 +98,32 @@ INSERT INTO `user_info` (`id`, `username`, `email`, `phone`, `password`, `cpassw
 (2, 'Test User', 'test@user.com', '9578463210', '$2y$10$vxn7XympnUwRNaDlWMbzT.iOw/1.QSV2YxCK5cG5TvHZfYFVQbbsK', '$2y$10$VUAjpHIiVVgpXn5ItOibu.nMce8x18pWnBvT1QAW0UCB0AklmVMo6', 'profile1.png'),
 (3, 'Dummy User', 'dummy@user.com', '9784565465', '$2y$10$Eep9IuUpGHfqG5rvhKikQOffq4jdus296sVLPp0cSr/enTXoCXzNi', '$2y$10$BLx3QijTWzlgtTlhLk6I7.N0EMkRzseVVEoJRIlDkJ3se8o1/puZ6', 'profile0.png'),
 (4, 'Demo Test', 'demo@test.com', '8945671237', '$2y$10$HsakELHCyLeSpfnjlRThIeRBEbyRWeVKMW1nKBVNdeuKayVPyPB.u', '$2y$10$brUJO4uOFlL/O78k1U83t.G2nPlKb0s/JZgqB0ihC4KBY9DHJUEWe', 'profile4.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jobs`
+--
+
+CREATE TABLE jobs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    salary VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL
+);
+
+--
+-- Dumping data for table `jobs`
+--
+
+INSERT INTO jobs (title, location, salary, description) VALUES
+('Software Engineer', 'New York', '$80,000 - $100,000', 'Develop and maintain software applications.'),
+('Data Analyst', 'San Francisco', '$70,000 - $90,000', 'Analyze and interpret complex data sets.'),
+('Project Manager', 'Remote', '$90,000 - $110,000', 'Manage projects and coordinate teams.'),
+('UI/UX Designer', 'Los Angeles', '$60,000 - $80,000', 'Design user interfaces and improve user experience.'),
+('Marketing Specialist', 'Chicago', '$50,000 - $70,000', 'Develop and execute marketing strategies.');
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

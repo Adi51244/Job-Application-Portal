@@ -23,3 +23,6 @@ Password: dummy
 
 email: demo@test.com
 Password: demo
+
+email: abc@gmail.com
+password: asd321
