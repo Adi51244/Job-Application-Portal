@@ -91,6 +91,6 @@ Reach out via:
 <div align="center">
 
 <img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" width="100" alt="Star" />  
-**Show some ❤️ by starring this repository!**
 
 </div>
+**Show some ❤️ by starring this repository!**
